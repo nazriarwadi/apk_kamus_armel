@@ -8,7 +8,7 @@ class AdminService {
 
   // Fungsi untuk mendapatkan data dictionary
   static Future<Map<String, dynamic>> getDictionary() async {
-    final url = Uri.parse('$baseUrl/dictionary_api_latest.php');
+    final url = Uri.parse('$baseUrl/dictionary_api.php');
 
     try {
       final response = await http.get(url);
